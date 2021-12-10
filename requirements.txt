@@ -16,7 +16,4 @@ urllib3
 requests_html
 
 glob2
-time
-tabula
 
-webbrowser
