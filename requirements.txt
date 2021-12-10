@@ -5,7 +5,8 @@ scikit-learn==0.21.3
 matplotlib==3.1.1
 bs4
 pdfminer
- 
+googlesearch
+wget
 nltk
 wordcloud
 fitz
@@ -17,3 +18,4 @@ requests_html
 
 glob2
 
+wget
