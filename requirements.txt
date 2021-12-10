@@ -10,7 +10,7 @@ nltk
 wordcloud
 fitz
 pdfplumber
-re
+
 requests
 urllib
 requests_html
