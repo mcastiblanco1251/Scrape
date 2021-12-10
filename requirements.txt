@@ -12,11 +12,11 @@ fitz
 pdfplumber
 
 requests
-urllib
+urllib3
 requests_html
-os
-glob
+
+glob2
 time
 tabula
-PIL
+
 webbrowser
