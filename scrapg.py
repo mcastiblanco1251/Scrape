@@ -1,7 +1,7 @@
 from urllib.request import Request, urlopen
 from bs4 import BeautifulSoup
 import requests
-from googlesearch import search
+#from googlesearch import search
 import time
 import wget
 from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
@@ -24,7 +24,7 @@ from requests_html import HTML
 from requests_html import HTMLSession
 import os
 import glob
-from selenium import webdriver
+#from selenium import webdriver
 import time
 from nltk.stem.porter import PorterStemmer
 from nltk.tokenize import RegexpTokenizer
