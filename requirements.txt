@@ -11,6 +11,6 @@ wordcloud
 fitz
 pdfplumber
 requests
-urllib
+urllib3
 requests_html
 glob2
