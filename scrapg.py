@@ -1,46 +1,33 @@
-from urllib.request import Request, urlopen
-from bs4 import BeautifulSoup
-import requests
-#from googlesearch import search
-import time
-import wget
-from pdfminer.pdfinterp import PDFResourceManager, PDFPageInterpreter
-from pdfminer.layout import LAParams
-from pdfminer.converter import TextConverter
-from io import StringIO
-from pdfminer.pdfpage import PDFPage
-from nltk.corpus import stopwords
-import matplotlib.pyplot as plt
-from wordcloud import WordCloud
-from nltk.probability import FreqDist
-import fitz
-import pdfplumber
-import re
-import seaborn as sns
-import requests
-import urllib
-import pandas as pd
-from requests_html import HTML
-from requests_html import HTMLSession
-import os
 import glob
-#from selenium import webdriver
+import os
+import smtplib
 import time
-from nltk.stem.porter import PorterStemmer
-from nltk.tokenize import RegexpTokenizer
-from nltk.tokenize import word_tokenize
-from tabula import read_pdf
-import streamlit as st
-from PIL import Image
-import webbrowser
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.cluster import KMeans
+import urllib
+from io import StringIO
+
+import fitz
 import numpy as np
+import pandas as pd
+import requests
+import streamlit as st
+import wget
+from nltk.corpus import stopwords
+from nltk.probability import FreqDist
+from nltk.tokenize import word_tokenize
+from pdfminer.converter import TextConverter
+from pdfminer.layout import LAParams
+from pdfminer.pdfinterp import PDFPageInterpreter, PDFResourceManager
+from pdfminer.pdfpage import PDFPage
+from PIL import Image
+from requests_html import HTMLSession
+from sklearn.cluster import KMeans
+from sklearn.feature_extraction.text import TfidfVectorizer
+from tabula import read_pdf
 
 row1_1, row1_2 = st.columns((2,3))
 
 with row1_1:
-    image = Image.open('C:/Users/Mcastiblanco/Documents/AGPC/DataScience2020/Streamlit/Scrape/bus.jpg')
+    image = Image.open('bus.jpg')
     st.image(image, use_column_width=True)
     st.markdown('Web App by [Manuel Castiblanco](https://github.com/mcastiblanco1251)')
 with row1_2:
@@ -61,7 +48,7 @@ with row1_2:
                 sender = 'macs1251@hotmail.com'
                 smtpserver = smtplib.SMTP("smtp-mail.outlook.com",587)
                 user = 'macs1251@hotmail.com'
-                password = '1251macs'
+                password = 'xxxxxxxxxxx'
                 smtpserver.ehlo()
                 smtpserver.starttls()
                 smtpserver.ehlo()
@@ -72,7 +59,7 @@ with row1_2:
                 smtpserver.close()
 
 st.header('Application')
-st.write('_______________________________________________________________________________________________________')
+st.markdown("""---""")
 app_des=st.expander('Description App')
 with app_des:
     st.markdown("""
