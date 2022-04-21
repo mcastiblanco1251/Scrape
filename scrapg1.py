@@ -31,11 +31,11 @@ row1_1, row1_2 = st.columns((2,3))
 with row1_1:
     image = Image.open('bus.jpg')
     st.image(image, use_column_width=True)
-    st.markdown('Web App by [Manuel Castiblanco](https://ia.smartecorganic.com.co/index.php/contact/)')
+    st.markdown('Web App by [Manuel Castiblanco](https://ia.smartecoganic.com.co/index.php/contact/)')
 with row1_2:
     st.write("""
     # Scraping App
-    Esta aplicación guarda tu busqueda y hace una agruapación de la información requerida!
+    Esta app te facilita tus búsquedas, las extrae, guarda y analiza sin complicaciones!
     """)
     with st.expander("Contact us 👉"):
         with st.form(key='contact', clear_on_submit=True):
@@ -65,7 +65,7 @@ st.write('______________________________________________________________________
 app_des=st.expander('Description App')
 with app_des:
     st.markdown("""
-    Este es una aplicación para agrupar la información y realizar un análsis detallado de la información que buscas.
+    Estas a punto de iniciar la extracción la información y realizar un análsis detallado sigue atento los pasos.
         """)
 @st.cache
 def get_source(url):
