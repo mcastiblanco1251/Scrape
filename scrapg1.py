@@ -65,7 +65,7 @@ st.write('______________________________________________________________________
 app_des=st.expander('Description App')
 with app_des:
     st.markdown("""
-    Estas a punto de iniciar la extracción la información y realizar un análsis detallado sigue atento los pasos.
+    Estas a punto de iniciar la extracción  y realizar un análsis detallado  de la información que necesitas. Sigue atento los pasos.
         """)
 @st.cache
 def get_source(url):
