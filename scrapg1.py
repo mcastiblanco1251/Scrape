@@ -100,7 +100,7 @@ def parse_results(response):
     css_identifier_result = ".tF2Cxc"
     css_identifier_title = "h3"
     css_identifier_link = ".yuRUbf a"
-    css_identifier_text = ".NJo7tc.Z26q7c"
+    #css_identifier_text = ".IsZvec"
 
     results = response.html.find(css_identifier_result)
 
