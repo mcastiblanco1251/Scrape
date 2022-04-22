@@ -31,7 +31,7 @@ row1_1, row1_2 = st.columns((2,3))
 with row1_1:
     image = Image.open('bus.jpg')
     st.image(image, use_column_width=True)
-    st.markdown('Web App by [Manuel Castiblanco](http://ia.smartecorganic.com.co/contact/)')
+    st.markdown('Web App by [Manuel Castiblanco](http://ia.smartecorganic.com.co//index.php/contact/)')
 with row1_2:
     st.write("""
     # Scraping App
@@ -100,7 +100,7 @@ def parse_results(response):
     css_identifier_result = ".tF2Cxc"
     css_identifier_title = "h3"
     css_identifier_link = ".yuRUbf a"
-    css_identifier_text = ".IsZvec"
+    css_identifier_text = ".NJo7tc.Z26q7c"
 
     results = response.html.find(css_identifier_result)
 
