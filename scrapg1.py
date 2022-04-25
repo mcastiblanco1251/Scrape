@@ -231,16 +231,16 @@ with st.form(key='Busqueda', clear_on_submit=False):
 
         #    print(results)
 #        table_general=results1.append(table_total,ignore_index=True)
-            dirName=dir+carpeta
-            try:
-                os.makedirs(dirName)
-                st.write(f" El Directorio {dirName} con el archivo {file} fue creado ")
-            except FileExistsError:
-                st.write(f" El Directorio {dirName} con el archivo {file} ya existe")
-            table_general.to_csv(f'{dirName}/{file}.csv', sep=',', encoding='utf-8', index = False)
+        dirName=dir+carpeta
+        #try:
+        os.makedirs(dirName)
+        st.write(f" El Directorio {dirName} con el archivo {file} fue creado ")
+        #except FileExistsError:
+        st.write(f" El Directorio {dirName} con el archivo {file} ya existe")
+        table_general.to_csv(f'{dirName}/{file}.csv', sep=',', encoding='utf-8', index = False)
 
-            st.header('Tabla resumen')
-            table_general
+        st.header('Tabla resumen')
+        table_general
 
 
             #Filtrado y descargue PDF
